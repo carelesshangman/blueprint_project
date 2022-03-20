@@ -1,0 +1,48 @@
+div {
+    display: flex;
+    justify-content: center;
+}
+
+.focus{
+    width: 300px;
+    height: 300px;
+    animation: resizeBig 0.45s linear;
+}
+
+.other{
+    margin-top: 25px;
+    width: 250px;
+    height: 250px;
+    animation: resizeSmall 0.45s linear;
+}
+
+
+@keyframes resizeBig {
+    0%{
+        margin-top: 25px;
+        width: 250px;
+        height: 250px;
+    }
+    100%{
+        margin-top: 0px;
+        width: 300px;
+        height: 300px;
+    }
+}
+
+@keyframes resizeSmall {
+    0%{
+        margin-top: 0px;
+        width: 300px;
+        height: 300px;
+    }
+    100%{
+        margin-top: 25px;
+        width: 250px;
+        height: 250px;
+    }
+}
+
+#main{
+    border-top: 2px solid black;
+}

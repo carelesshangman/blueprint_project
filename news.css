@@ -1,0 +1,76 @@
+body {
+    background: #272727;
+    font-family: "Montserrat", sans-serif;
+  }
+
+.news{
+    padding: 1.75em;
+}
+
+.news:nth-child(odd){
+    display: flex;
+    flex-direction: row;
+}
+
+.news:nth-child(even){
+    display: flex;
+    flex-direction: row-reverse;
+}
+
+.newstext{
+    
+    text-indent: 2em;
+    padding: 1.75em;
+    color: #f6f4e6;
+	font-family: "Montserrat", sans-serif;
+	animation: appear 1s ease 1;
+}
+
+a:link {
+    color: #f6f4e6;
+    text-decoration: none;
+}
+a:visited {
+    color: #f6f4e6;
+    text-decoration: none;
+  }
+
+a[href]:hover {
+    color: #e2850b;
+    text-decoration: none;
+}
+
+.blueprint:hover{
+    animation: blueprintColor 0.5s ease 1;
+    color: #0980f0;
+}
+
+img{
+    width: 33vw;
+    height: 33vh;
+}
+
+@keyframes appear {
+	0% {
+        color:#e23d0b;
+		letter-spacing: 10px;
+		font-size: 0;
+	}
+    75% {
+        color:#f0990e;
+    }
+	100% {
+        color: #f6f4e6;
+		letter-spacing: 0;
+	}
+}
+
+@keyframes blueprintColor {
+	0% {
+        color: #f6f4e6;
+	}
+	100% {
+
+        color: #0980f0;
+	}
+}
